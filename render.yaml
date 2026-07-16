@@ -3,7 +3,7 @@ services:
     name: anniversary-2-years
     runtime: static
     buildCommand: pnpm install && pnpm run build
-    publishPath: ./dist
+    staticPublishPath: ./dist
     routes:
       - type: rewrite
         source: /*
