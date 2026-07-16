@@ -1,8 +1,9 @@
 services:
-  - type: static
+  - type: web
     name: anniversary-2-years
+    runtime: static
     buildCommand: pnpm install && pnpm run build
-    staticPublishPath: ./dist
+    publishPath: ./dist
     routes:
       - type: rewrite
         source: /*
